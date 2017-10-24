@@ -1,6 +1,9 @@
-#pragma once
+#ifndef PHONG_H
+#define PHONG_H
+
+
 #include <string>
-using namespace std;
+using std::string;
 
 class Phong
 {
@@ -12,3 +15,4 @@ public:
 	~Phong();
 };
 
+#endif // !PHONG_H

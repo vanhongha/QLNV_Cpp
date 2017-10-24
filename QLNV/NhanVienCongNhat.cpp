@@ -3,6 +3,7 @@
 
 
 NhanVienCongNhat::NhanVienCongNhat() : NhanVien() {
+	loaiNV = CONG_NHAT;
 }
 
 

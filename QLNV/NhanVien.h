@@ -1,17 +1,18 @@
 #ifndef NhanVien_H
 #define NhanVien_H
 
+#include "Luong.h"
 #include "ThoiGian.h"
+#include "Phong.h"
 #include <string.h>
 #include <string>
 
 using namespace std;
 
-enum PhongBan
+enum LoaiNV
 {
-	PhongA,
-	PhongB,
-	PhongC
+	BIEN_CHE,
+	CONG_NHAT
 };
 
 class NhanVien{
@@ -19,9 +20,12 @@ public:
 	string maNV;
 	string tenNV;
 	string sdt;
-	PhongBan phongBan;
+	Luong luong;
 	ThoiGian ngaySinh;
+	Phong phongBan;
+	LoaiNV loaiNV;
 
+	void SetPhong(Phong phong);
 	NhanVien();
 	~NhanVien();
 };

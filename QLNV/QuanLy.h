@@ -23,6 +23,17 @@ public:
 	Phong *GetPhong(int index);
 
 	void ThemNV(NhanVien *nv);
+	void HienThiNhanVien();
+	void SuaNhanVien(NhanVien *nv);
+	void XoaNhanVien(NhanVien *nv);
+	NhanVien *GetNhanVien(int index);
+	int SoLuongNhanVien();
+	void HienThiNhanVienTheoLuong();
+
+	template <typename T> bool SortType(const T * const & a, const T * const & b)
+	{
+		return *a < *b;
+	}
 	NhanVien *NewNVBienChe();
 	NhanVien *NewNVCongNhat();
 	Phong *NewPhong();
